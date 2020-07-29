@@ -1,10 +1,18 @@
 ---
 layout: archive
 permalink: /geoscience/
-title: "Geoscientific Posts by Tags"
+title: "Geoscientific Works by Tags"
 author_profile: true 
 header:
-   image:"/images/veta.JPG"
+   image:"/images/rel2.png"
 --- 
 
+{% include group-by-array collection=site.posts field="tags" %}
 
+{% for tag in group names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify}}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+     {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
