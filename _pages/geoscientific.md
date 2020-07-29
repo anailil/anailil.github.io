@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /geoscience/
+permalink: /geoscientific/
 title: "Geoscientific Works by Tags"
 author_profile: true 
 header:
