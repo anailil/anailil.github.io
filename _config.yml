@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Liliana Vargas-Meleza"
+title                    : "Geo-Data Science Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Liliana Vargas-Meleza"
@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Liliana Vargas-Meleza"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a geocientist with a strong interest in subsurface and surface imaging."
+  avatar           : "/images/lvm2.jpg "  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Hi, I'm a geophycisist interested in subsurface imaging. This include seismic imaging, geophysical inversion, rock physics, and geology. " 
   location         : "The Hague, The Netherlands"
   email            :
   github           : "anailil"
