@@ -1,7 +1,7 @@
 ---
-layout: archive
+layout: posts
 permalink: /geoscientific/
-title: "Geoscientific Works by Tags"
+title: "Geoscientific Works"
 author_profile: true 
 header:
   image:"/images/rel2.png"
