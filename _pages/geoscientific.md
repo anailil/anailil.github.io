@@ -1,7 +1,7 @@
 ---
 layout: posts
-permalink: /geoscientific projects/
-title: "Geoscientific Projects"
+permalink: /projects/
+title: "Projects"
 author_profile: true
 header:
   image: "/images/rel2.png"
