@@ -2,10 +2,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Geoscientific Works"
-    url: /Geoscientific Works/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Geoscientific Projects"
+    url: /Geoscientific Projects/
+  - title: "CV"
+    url: /cv/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

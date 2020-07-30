@@ -20,7 +20,7 @@ title                    : "Geo-Data Science Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Liliana Vargas-Meleza"
-description              : "Geo-Data Science Portfolio."
+description              : "My geoscientific work"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Liliana Vargas-Meleza"
-  avatar           : "/images/lvm2.jpg "  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hi, I'm a geophycisist interested in subsurface imaging. This include seismic imaging, geophysical inversion, rock physics, and geology. " 
+  avatar           : "/images/lvm2.jpg "  
+  bio              : "Hi, thanks for stopping by. Here you will find a collection of my work in geosciences." 
   location         : "The Hague, The Netherlands"
   email            :
   github           : "anailil"
@@ -209,7 +209,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 7 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -279,9 +279,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
-      related: true
-
+      share: # true
+      related: # true
   - scope:
       path: ""
       type: pages

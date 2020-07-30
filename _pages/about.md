@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-   image: "/images/wall2.JPG"
+  image: "/images/wall2.JPG"
 ---
 
 I'm a geophysicist with a stong interest in the application of machine learning algorithms to enhance images for mapping natural resources.
