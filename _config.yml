@@ -101,7 +101,7 @@ author:
   github           : "anailil"
   linkedin         : "lvargasmeleza"
   links:
-    - label: "liliana.meleza@gmail.com", 
+    - label: "liliana.meleza@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:liliana.meleza@gmail.com"
     - label: "Website"
