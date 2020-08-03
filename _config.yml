@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Geo-Data Science Portfolio"
+title                    : "Geo-Data Science"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Liliana Vargas-Meleza"
@@ -95,13 +95,13 @@ analytics:
 author:
   name             : "Liliana Vargas-Meleza"
   avatar           : "/images/lvm2.jpg "  
-  bio              : "Hi, thanks for stopping by. Here you will find a collection of my work in geosciences." 
+  bio              : "I get by analysing geophysical data to understand Earth processes in the subsurface. Geospatial enthusiast." 
   location         : "The Hague, The Netherlands"
-  email            :
+  email            : "liliana.meleza@gmail.com"
   github           : "anailil"
   linkedin         : "lvargasmeleza"
   links:
-    - label: "liliana.meleza@gmail.com"
+    - label: "liliana.meleza@gmail.com", 
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:liliana.meleza@gmail.com"
     - label: "Website"

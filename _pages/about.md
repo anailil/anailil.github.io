@@ -5,10 +5,13 @@ header:
   image: "/images/wall2.JPG"
 ---
 
-I'm a geophysicist with a stong interest in the application of machine learning algorithms to enhance images for mapping natural resources.
+I'm a geophysicist with a stong interest in the application of machine learning algorithms to enhance imaging technology.
 
-Some of my work focused on imaging and characterisation of the subsurface by integrating seismic data, rock physics, and geology.
+Most of my work have focused on imaging and characterisation of the subsurface by integrating seismic data, rock physics, and geology. 
 
-Recently, I have focused on imagery using satellite data to create maps of the surface reflectance for natural resources monitoring.
+I'm also interested in analysing remote sensing data, e.g., SAR, InSAR, Lidar, for mapping and anomaly detection using open-source python tools. 
 
+My potfolio is a work in progress, from past and present projects I've worked on, as I build upon my data science skills and I learn about remote sensing applications.
+
+Get in touch!
 
