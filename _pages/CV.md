@@ -1,86 +1,60 @@
 ---
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 ---
 
 <div class="cv">
-	<a href="/files/LVargasM-CV-2020.pdf" class="btn btn-default pull-right" title="Download CV as PDF">Download CV</a>
-				<div itemscope itemtype="http://data-vocabulary.org/Person">
-				<span itemprop="name"><h1>Liliana Vargas-Meleza</h1></span>
-				<address>
-				<span itemprop="affiliation"><strong>Open to work</strong><br></span>
-				<span itemprop="affiliation">Data Scientist and Geophysicist<br></span>
-				The Hague<br>
-				The Netherlands<br>
-				<abbr title="phone">P:</abbr> +31 6 5765 3940<br>
-				<span class="obfuscate">liliana.meleza@gmail.com</span>
-				</address>
-				</div>
-					
-				<h2>Degrees</h2>
-				<p><strong>Ph.D. in Geology, University of Aberdeen, United Kingdom, 2015</strong><br>
-								
-				<p><strong>M.Sc. in Applied Geophysics, TU Delft &amp; ETH Zurich &amp; RWTH Achen, 2009</strong></p>
-				
-				<p><strong>B.Sc. in Geophysical Engineering, UNAM, Mexico, 2003 </strong></p>
+	<a href="/files/LVargasM-CV-geo-2020.pdf" class="btn btn-default pull-right" title="Download CV as PDF">Download CV</a>
+	<div itemscope itemtype="http://data-vocabulary.org/Person">
+	<span itemprop="name"><h2>Liliana Vargas-Meleza</h2></span>
+	<address>
+	<span itemprop="affiliation"><strong>Open to work</strong><br></span>
+	<span itemprop="affiliation">Geo-Data Scientist<br></span>
+	The Hague, The Netherlands<br>
+	<span class="obfuscate">liliana.meleza@gmail.com</span>
+	</address>
+</div>
+	<h2>Degrees</h2>
+	<p><strong>Ph.D. in Geology</strong>, 2015, University of Aberdeen, United Kingdom.<br>
+	<p><strong>M.Sc. in Applied Geophysics</strong>, 2009, TU Delft &amp; ETH Zurich &amp; RWTH Aachen.</p>
+	<p><strong>B.Sc. in Geophysical Engineering</strong>, 2003, UNAM, Mexico</p>
 
-				<h2>Professional Employment</h2>
-				<p><strong>Exploration Geophysicist &amp; Project Manager, Mexican Petroleum Institute, 2004-2007, 2009-2011, 2015-2019</strong></p>
-				<ul>
-				<li>Lead team. Communication with internal and external stakeholders.</li>
-				<li>Geomechanics services <a href="https://fulcrum.org" title="Fulcrum website">Fulcrum</a></li>
-				<li>Develop scripts and improve workflows for pore pressure prediction.</li>
-				<li>Developed scripts and improved workflows for converting and publishing content in specific XML schemas.</li>
-				</ul>
-				
-				<li>Project manager for... provided the strategic planning, day-to-day management</li>
-				<li>Collaborated with the research department to outline research projects</li>
-				<li>Researched, planned, implemented, and manage .. ; developed workflows and services to ..., trained and supervised two undergraduate and two graduate interns</li>
-				<li>Collaborated with the Smithsonian’s Freer Sackler Gallery, <a href="http://peacockroom.wayne.edu/" title="Story of the Beautiful">developing and implementing a digital project</a> that brought the Peacock Room and its collection to a digital environment.</li>
-				<li>Project manager for NEH funded grant to build presentation tools for digital collection software.</li>
-				<li>Assisted in the development and maintenance of </li>
-
-				<h2>Technology Applications and Expertise</h2>
-					<dl class="dl-horizontal">
-						<dt>Specialized Skills</dt>
-						<dd>Seismic imaging (modelling, inversion, migration), rock physcis, geomorphology, seismic integration, anomaly detection</dd>
-					</dl>
-					<dl class="dl-horizontal">
-						<dt>Programming</dt>
-						<dd>Python, Matlab</dd>
-						<dt>Version Control</dt>
-						<dd>Git, GitHub</dd>
-					</dl>
-					<dl class="dl-horizontal">
-						<dt>Python ML frameworks</dt>
-						<dd>Numpy, Matplotlib, Pandas, Sci-kit Learn, TensorFlow</dd>
-					</dl>
-					<dl class="dl-horizontal">
-						<dt>Applications</dt>
-						<dd>Microsoft Office, Google Drive, Earth Engine</dd>
-					</dl>
-					<dl class="dl-horizontal">
-						<dt>OS/Environments</dt>
-						<dd>Mac, Linux, Unix, Ubuntu, Windows</dd>
-					</dl>
-					<h2>Presentations and Publications</h2>
-					<p><strong>Detroit, MI. Invited Panelist.</strong> <em>Association of University Presses Annual Meeting 2019</em>, "Creating and Using Accessible Scholarly Ebooks: Tips from Those in the Trenches," June 2019.</p>
-					
-					<p><strong>Traverse City, MI.  Conference Co-Presenter.</strong>  <em>Michigan Library Association Annual Conference.</em> “After Digitization: Tools and Ideas for Improving Digital Collection Services,” November 2010. Presented with Adrienne Aluzzo. Available at: <a href="http://digitalcommons.wayne.edu/libsp/38/" title="After Digitization: Tools and Ideas for Improving Digital Collection Services">http://digitalcommons.wayne.edu/libsp/38/</a>.</p> 
-					<p><strong>Atlanta, GA.  Conference Co-Presenter.</strong> <em>Library Information and Technology Association (LITA) National Conference.</em> “DLO to Go: Fostering Instructional Use of New Media,” October 2010. Presented with Nardina N. Mein and Joshua Neds-Fox.</p>
- 
-					<p><strong>Chicago, IL.  Conference Co-Presenter.</strong> EDUCAUSE 2009 Midwest Regional Conference. “The WSU Digital Learning and Development Sandbox,” March 2009. Presented with Julie Klein and Anne-Marie Armstrong.</p>
-				
-				<h2>Professional Activities and Service</h2>
-				<ul class="list-unstyled">
-					<li>MLibrary Digital Accessibility Team 2018-present</li>
-					<li>Managing Editor, <em><a href="http://www.journalofelectronicpublishing.org" title="Journal of Electronic Publishing">Journal of Electronic Publishing</a></em> 2013-2017</li>
-					<li>MLibrary Open Access Committee 2013-2016</li>
-					<li><a href="http://www.digitalpreservation.gov/ndsa" title="National Digital Stewardship Alliance">National Digital Stewardship Alliance</a>, Content Working Group 2012-2014</li>
-					<li>WSU Graduate Council 2011-2012</li>
+	<h2>Professional Employment</h2>
+	<p><strong>Exploration Geophysicist &amp; Project Manager, Mexican Petroleum Institute, 2004-2007, 2009-2011, 2015-2019</strong></p>
+	<ul>
+	<li>Worked in multidisciplinary teams to analyse data, made rock property predictions, communicate results, and enable decisions.</li>
+	<li>Coordinated team of four geoscientists to predict lithofacies distribution from seismic data using unsupervised machine learning.</li>
+	<li>Managed projects from proposal writing, scope setup, deliverables, service quotation, and time completion. Communication with internal and external stakeholders.</li>
+	<li>Estimated spatial distribution of properties (facies, porosity, mineral volumes and fluid) derived from inverted elastic models.</li>
+	<li>Used neural networks and multilinear regression methods to identify data anomalies, properties of interest and their relationships.</li>
+	<li>Trained and supervised two undergraduate and two graduate interns</li>
+	</ul>
 		
-
-				</ul>
+	<h2>Technology Applications and Expertise</h2>
+	<dl class="dl-horizontal">
+	<dt>Specialized Skills</dt>
+	<dd>Seismic imaging (modelling &amp; inversion), rock physcis, integrated data analysis, anomaly detection</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>Programming</dt>
+	<dd>Python, Matlab</dd>
+	<dt>Version Control</dt>
+	<dd>Git, GitHub</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>Python ML frameworks</dt>
+	<dd>Numpy, Matplotlib, Pandas, Sci-kit Learn, TensorFlow</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>Applications</dt>
+	<dd>Microsoft Office, Google Drive, Earth Engine</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>OS/Environments</dt>
+	<dd>Mac, Linux, Unix; Ubuntu, Windows</dd>
+	</dl>
+	
+	</ul>
 				
 </div>
 
