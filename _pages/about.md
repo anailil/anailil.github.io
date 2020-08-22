@@ -5,13 +5,11 @@ header:
   image: "/images/wall2.JPG"
 ---
 
-I'm a geophysicist with a stong interest in the application of machine learning algorithms to enhance imaging technology.
+I'm a geophysicist with a strong interest image processing for detection of natural resources in the subsurface and spatially mapping their distribution. My work includes imaging and characterisation of subsurface reservoirs from seismic data. Applications I am interested include process and analyse remote sensing data for anomaly detection using open-source python tools, rock physics modelling and computarised tomography. 
 
-Most of my work have focused on imaging and characterisation of the subsurface by integrating seismic data, rock physics, and geology. 
+Have a look to the geo-data science projects I have worked on in the Project section.
 
-I'm also interested in analysing remote sensing data, e.g., SAR, InSAR, Lidar, for mapping and anomaly detection using open-source python tools. 
+If you want to get to know my artisitc side, visit my gallery where I have photography collections and watercolor paintings.
 
-My potfolio is a work in progress, from past and present projects I've worked on, as I build upon my data science skills and I learn about remote sensing applications.
-
-Get in touch!
+Thanks for your interest and get in touch as I'm open for work and collaborations.
 

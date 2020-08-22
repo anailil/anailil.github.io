@@ -1,0 +1,54 @@
+I"|	<div class="cv">
+	<a href="/files/LVargasM-CV-geo-2020.pdf" class="btn btn-default pull-right" title="Download CV as PDF">Download CV</a>
+
+	<address>
+	<span itemprop="affiliation">Geo-Data Scientist<br /></span>
+	<span itemprop="affiliation"><strong>Open to work</strong><br /></span>
+	</address>
+
+	<h2>Education</h2>
+	
+	<p><strong>Ph.D. in Geology</strong>, 2015, University of Aberdeen, United Kingdom.</p>
+	<p><a href="https://idealeague.org/geophysics/" title="IDEA League">M.Sc. in Applied Geophysics</a>, 2009, TU Delft &amp; ETH Zurich &amp; RWTH Aachen (IDEA League).</p>
+	<p><strong>B.Sc. in Geophysical Engineering</strong>, 2003, UNAM, Mexico.</p>
+
+	<h2>Professional Employment</h2>
+	<p>Exploration Geophysicist at <a href="https://www.gob.mx/imp" title="Exploration &amp; Production">Mexican Petroleum Institute</a> | 2004-2007, 2009-2011, 2015-2019</p>
+	
+	<ul>
+	<li>Worked in multidisciplinary teams to analyse data, made rock property predictions, communicate results, and enable decisions.</li>
+	<li>Coordinated team of four geoscientists to predict lithofacies distribution from seismic data using unsupervised machine learning.</li>
+	<li>Managed projects from proposal writing, scope setup, deliverables, service quotation, and time completion. Communication with internal and external stakeholders.</li>
+	<li>Estimated spatial distribution of properties (facies, porosity, mineral volumes and fluid) derived from inverted elastic models.</li>
+	<li>Used neural networks and multilinear regression methods to identify data anomalies, properties of interest and their relationships.</li>
+	<li>Trained and supervised two undergraduate and two graduate interns</li>
+	</ul>
+		
+	<h2>Technology Applications and Expertise</h2>
+	<dl class="dl-horizontal">
+	<dt>Specialized Skills</dt>
+	<dd>Seismic imaging (modelling &amp; inversion), rock physcis, integrated subsurface data analysis, image processing</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>Programming</dt>
+	<dd>Python, Matlab</dd>
+	<dt>Version Control</dt>
+	<dd>Git, GitHub</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>Python ML frameworks</dt>
+	<dd>Numpy, Matplotlib, Pandas, Sci-kit Learn, TensorFlow</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>Applications</dt>
+	<dd>Microsoft Office, Google Drive, Earth Engine</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	<dt>OS/Environments</dt>
+	<dd>Mac, Linux, Unix; Ubuntu, Windows</dd>
+	</dl>
+	
+	&lt;/ul&gt;
+				
+</div>
+:ET
