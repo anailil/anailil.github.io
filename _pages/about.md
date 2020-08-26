@@ -5,11 +5,14 @@ header:
   image: "/images/wall2.JPG"
 ---
 
-I'm a geophysicist with a strong interest image processing for detection of natural resources in the subsurface and spatially mapping their distribution. My work includes imaging and characterisation of subsurface reservoirs from seismic data. Applications I am interested include process and analyse remote sensing data for anomaly detection using open-source python tools, rock physics modelling and computarised tomography. 
+I'm a scientist who likes rocks and make computer models of them. 
 
-Have a look to the geo-data science projects I have worked on in the Project section.
+Specialised on the integration of geophysical and geologic data to predict physical properties of rocks that lead to the detection of natural resources in the subsurface, namely, *geo-data science*.
 
-If you want to get to know my artisitc side, visit my gallery where I have photography collections and watercolor paintings.
+Analytical methods I apply to process geophysical data include spatial and spectral signal processing, numerical modelling, inversion, anomaly detection, and 3D mapping aided by classic statistical prediction methods as well as machine learning algorithms. 
 
-Thanks for your interest and get in touch as I'm open for work and collaborations.
+Interested in leveraging my skills processing *remote sensing data* and produce high-res images for monitoring Earth's surface resources (e.g., soil, biomass, roads).
+
+Fancy a collaboration? Drop me a message!
+
 
