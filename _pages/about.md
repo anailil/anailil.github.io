@@ -5,14 +5,18 @@ header:
   image: "/images/wall2.JPG"
 ---
 
-I'm a scientist who likes rocks and make computer models of them. 
+My work has been focused on quantitative analysis of geophysical and geologic data for detection of natural resources, namely, *geo-data science*. Through numerical modelling and inversion methods, I predict physical properties of rocks in the interior of the Earth or at its surface. It requieres team work to get all this done and expertise in several Earth sciences. 
 
-Specialised on the integration of geophysical and geologic data to predict physical properties of rocks that lead to the detection of natural resources in the subsurface, namely, *geo-data science*.
+Results driven and motivated by challenges, I teach myself machine learning and *remote sensing data* using free and open resources. Because science must be open and free to everyone. 
 
-Analytical methods I apply to process geophysical data include spatial and spectral signal processing, numerical modelling, inversion, anomaly detection, and 3D mapping aided by classic statistical prediction methods as well as machine learning algorithms. 
+This is a place where I collect these learning experiences.
 
-Interested in leveraging my skills processing *remote sensing data* and produce high-res images for monitoring Earth's surface resources (e.g., soil, biomass, roads).
+Thanks for your interest! 
 
-Fancy a collaboration? Drop me a message!
+Liliana
+
+
+
+
 
 
