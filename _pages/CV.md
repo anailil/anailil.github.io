@@ -39,35 +39,35 @@ temporal resolutions and sampling rates.</li>
 	<h2>Technology Applications &amp;  Expertise</h2>
 	<dl class="dl-horizontal">
 	<dt>Specialized Skills</dt>
-	<dd>Seismic imaging (modelling &amp; inversion), rock physcis, integrated subsurface data analysis, image processing</dd>
+	<li>Seismic imaging (modelling &amp; inversion), rock physcis, integrated subsurface data analysis, image processing</li>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>Programming</dt>
-	<dd>Python, Matlab</dd>
+	<li>Python, Matlab</li>
 	<dt>Version Control</dt>
-	<dd>Git, GitHub</dd>
+	<li>Git, GitHub</li>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>Python ML frameworks</dt>
-	<dd>Numpy, Matplotlib, Pandas, Sci-kit Learn, TensorFlow</dd>
+	<li>Numpy, Matplotlib, Pandas, Sci-kit Learn, TensorFlow</li>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>Applications</dt>
-	<dd>Microsoft Office, Google Drive, Earth Engine</dd>
+	<li>Microsoft Office, Google Drive, Earth Engine</li>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>OS/Environments</dt>
-	<dd>Mac, Linux, Unix; Ubuntu, Windows</dd>
+	<li>Mac, Linux, Unix; Ubuntu, Windows</li>
 	</dl>
 
-	<h2>Publications &amp; Presentations</h2>
+	<h2>Recent Publications &amp; Conferences</h2>
 	<dl class="dl-horizontal">
-	<li>Vargas-Meleza, L., Healy, D. and Alsop, I., Timms, N.E., 2015, <a href="https://doi.org/10.1016/j.jsg.2014.11.001">Exploring the relative contribution of mineralogy and CPO to the seismic velocity anisotropy of evaporites</a>: Journal of Structural Geology, vol. 70, pp. 39-55.</li>
-	<li>Vargas-Meleza, L. and Valle-Molina, C., 2012, <a href="http://www.scielo.org.mx/pdf/iit/v13n4/v13n4a7.pdf">Advances and Applications of Rock Physics for Hydrocarbon Exploration</a>: Ingeniería Investigación y Tecnología, vol. XIII no. 4, pp. 439-450.</li>
-	<li> Chávez-Pérez, S. and Vargas-Meleza, L., 2008, <a href="https://doi.org/10.1190/1.2896626">Enhanced imaging workflow of seismic data from Chicontepec basin Mexico</a>: The Leading Edge, vol. 27 no. 3, pp. 352-359.</li>
 	<li>Vargas-Meleza, L., Espinoza-Carrasco, E., and Chávez-Pérez, S., 2016, <a href="http://www.searchanddiscovery.com/pdfz/documents/2017/41980vargas-meleza/ndx_vargas-meleza.pdf.html">Implications of seismic attribute computations from depth-migrated data</a>: AAPG/SEG International Conference & Exhibition, Cancun, MX.</li>
+	<li>Vargas-Meleza, L., Healy, D. and Alsop, I., Timms, N.E., 2015, <a href="https://doi.org/10.1016/j.jsg.2014.11.001">Exploring the relative contribution of mineralogy and CPO to the seismic velocity anisotropy of evaporites</a>: Journal of Structural Geology, vol. 70, pp. 39-55.</li>
 	<li>Vargas-Meleza, L. and Healy, D., 2013, <a href="https://meetingorganizer.copernicus.org/EGU2013/EGU2013-5702.pdf">Laboratory measurements of seismic velocity anisotropy of salt diapirs - Implications for wellbore stability and seismic processing</a>: Geophysical Research Abstracts, vol. 15, EGU General Assembly, Vienna, Austria.</li>
 	<li>Vargas-Meleza, L. and Farrell, N., 2013, Laboratory-based characterisation of field samples: Implications for geomechanics. Petroleum Exploration Society of Great Britain (PESGB), Aberdeen Evening Lecture, UK.</li>
+	<li>Vargas-Meleza, L. and Valle-Molina, C., 2012, <a href="http://www.scielo.org.mx/pdf/iit/v13n4/v13n4a7.pdf">Advances and Applications of Rock Physics for Hydrocarbon Exploration</a>: Ingeniería Investigación y Tecnología, vol. XIII no. 4, pp. 439-450.</li>
+	<li> Chávez-Pérez, S. and Vargas-Meleza, L., 2008, <a href="https://doi.org/10.1190/1.2896626">Enhanced imaging workflow of seismic data from Chicontepec basin Mexico</a>: The Leading Edge, vol. 27 no. 3, pp. 352-359.</li>
 	</dl>
 				
 	<h2>Professional Activities &amp; Service</h2>
