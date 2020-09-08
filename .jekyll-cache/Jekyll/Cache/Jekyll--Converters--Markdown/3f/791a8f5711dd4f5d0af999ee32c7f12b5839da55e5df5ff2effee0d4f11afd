@@ -1,0 +1,32 @@
+I"<p>The following sequence of images show results from a workflow to processes seismic cross-sections. 
+<img src="http://localhost:4000/images/att_11.jpg" alt="alt" /></p>
+
+<p>Seismic cross-section showing amplitude (frequency band modulated)
+<img src="http://localhost:4000/images/att_00.jpg" alt="alt" /></p>
+
+<p>Seismic cross-section showing the coherence attribute (discontinuity) from original data.
+<img src="http://localhost:4000/images/att_01.jpg" alt="alt" />
+Seismic cross-section showing the coherence attribute (discontinuity) smoothed with <em>kuwahara filter</em>.
+<img src="http://localhost:4000/images/att_02.jpg" alt="alt" /></p>
+
+<p>Seismic cross-section showing the maximum magnitud (Fourier).
+<img src="http://localhost:4000/images/att_03.jpg" alt="alt" />
+Seismic cross-section showing the maximum magnitud (Fourier) smoothed with <em>kuwahara filter</em>.
+<img src="http://localhost:4000/images/att_04.jpg" alt="alt" /></p>
+
+<p>Seismic cross-section showing the frequency content.
+<img src="http://localhost:4000/images/att_05.jpg" alt="alt" />
+Seismic cross-section showing the frequency content smoothed with <em>kuwahara filter</em>.
+<img src="http://localhost:4000/images/att_06.jpg" alt="alt" /></p>
+
+<p>Seismic cross-section showing the curvature attribute.
+<img src="http://localhost:4000/images/att_07.jpg" alt="alt" />
+Seismic cross-section showing the curvature attribute <em>kuwahara filter</em>.
+<img src="http://localhost:4000/images/att_08.jpg" alt="alt" /></p>
+
+<p>Seismic cross-section showing the facies classification using self-organising maps.
+<img src="http://localhost:4000/images/att_09.jpg" alt="alt" />
+Seismic cross-section showing the facies classification using self-organising maps from smoothed data.
+<img src="http://localhost:4000/images/att_10.jpg" alt="alt" /></p>
+
+:ET

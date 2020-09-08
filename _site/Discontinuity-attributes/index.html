@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Salt characterisation - Geo-Data Science</title>
-<meta name="description" content="Insights from field and laboratory studies">
+<!-- begin _includes/seo.html --><title>Discontinuity attributes - Geo-Data Science</title>
+<meta name="description" content="Introduction">
 
 
   <meta name="author" content="Liliana Vargas-Meleza">
@@ -19,15 +19,15 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Geo-Data Science">
-<meta property="og:title" content="Salt characterisation">
-<meta property="og:url" content="http://localhost:4000/Salt-characterisation/">
+<meta property="og:title" content="Discontinuity attributes">
+<meta property="og:url" content="http://localhost:4000/Discontinuity-attributes/">
 
 
-  <meta property="og:description" content="Insights from field and laboratory studies">
+  <meta property="og:description" content="Introduction">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/images/DSC_0043.JPG">
+  <meta property="og:image" content="http://localhost:4000/images/DSC_0006.JPG">
 
 
 
@@ -44,7 +44,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/Salt-characterisation/">
+<link rel="canonical" href="http://localhost:4000/Discontinuity-attributes/">
 
 
 
@@ -164,7 +164,7 @@
   style=" background-image: url('');"
 >
   
-    <img src="/images/DSC_0043.JPG" alt="Salt characterisation" class="page__hero-image">
+    <img src="/images/DSC_0006.JPG" alt="Discontinuity attributes" class="page__hero-image">
   
   
 </div>
@@ -310,15 +310,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Salt characterisation">
-    <meta itemprop="description" content="Insights from field and laboratory studies">
+    <meta itemprop="headline" content="Discontinuity attributes">
+    <meta itemprop="description" content="Introduction">
     <meta itemprop="datePublished" content="2020-07-30T00:00:00+02:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Salt characterisation
+          <h1 id="page-title" class="page__title" itemprop="headline">Discontinuity attributes
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -335,87 +335,99 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Salt geometry is difficult to image seismically due to:</p>
+        <h2 id="introduction">Introduction</h2>
 
-<ul>
-  <li>Large velocity contrast</li>
-  <li>Steeply dipping  flanks</li>
-  <li>Most algorithms assume acoustic (isotropic and homogeneous) media</li>
-</ul>
+<p>Discontinuity calculations, also called coherence or semblance, are some of the most commonly used seismic attributes. They measure the amount of similarity between adjacent seismic traces. However, there are several different types of discontinuity estimates and a plethora of names for similar attributes.</p>
 
-<p><img src="http://localhost:4000/images/salt_01.png" alt="alt" /></p>
+<h2 id="cross-correlation">Cross-correlation</h2>
+<p>The earliest discontinuity algorithm used the maximum cross-correlation value of three traces.  Each trace is correlated with a “moving-window” subset of two neighboring traces (Figures 1B and 2B). It was called <em>coherence attribute</em>, based on its conceptual similarity to pre-stack methods for estimating stacking velocities.</p>
 
-<p>However, observations of natural salt show layering, like this photo from a salt mine in Canada where I conducted fieldwork for my PhD project.</p>
+<p>Cross-correlation approach to an arbitrary number of input traces is also referred to as “semblance-based coherence”. As an example:</p>
 
-<p><img src="http://localhost:4000/images/salt_03.png" alt="alt" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def moving_window(data, func, window):
+  wrapped = lambda x: func(x.reshape(window))
+  return scipy.ndimage.generic_filter(data,
+                                      wrapped,
+                                      window)
 
-<p>Now, salt is a general term that actually refers to evaporites: sequences of varios evaporitic minerals. Each of these minerals have specific physical properties which determine the geometrical arrangement of crystals if they undergo tectonic stress.</p>
+def marfurt_semblance(region):
+  # Stack traces in 3D region into 2D array
+  region = region.reshape(-1, region.shape[-1])
+  ntraces, nsamples = region.shape
+  square_sums = np.sum(region, axis=0)**2
+  sum_squares = np.sum(region**2, axis=0)
+  c = square_sums.sum() / square_sums.sum()
+  return c / ntraces
 
-<p>Look at these images from salt diapir outcrops in Nova Scotia shores. These diapirs are mainly of gypsum and show strong crystal alignments or <em>foliation</em>.</p>
+result = moving_window(seismic_data,
+                       marfurt_semblance,
+                       (3, 3, 9))
+</code></pre></div></div>
 
-<p><img src="http://localhost:4000/images/salt_04.png" alt="alt" /></p>
+<h2 id="removing-amplitude-sensitivity">Removing Amplitude Sensitivity</h2>
 
-<h2 id="hypothesis">Hypothesis</h2>
+<p>Methods to compute discontinuity are sensitive to lateral differences in amplitude as well as in phase. While this is desirable for detecting stratigraphic features, differences due amplitude can obscure subtle structural features. <em>Eigenstructure-based coherence</em> is an implementation that is sensitive only to lateral changes in phase of the input waveforms.</p>
 
-<p>Seismic images where salt is present are commonly processed under the assumption that salt deposits are mainly of isotropic and homogeneous halite. However, previous studies indicate that anhydrite and layered evaporites may play a bigger role when it comes to identify salt geometry in the subsurface, as shown below (Jackson &amp; Lewis, 2012).</p>
+<p>Eigenstructure-based coherence (Gersztenkorn and Marfurt, 1999) computes the covariance matrix of the input region, similar to the previous example. However, it uses the ratio of the largest eigenvalue of the covariance matrix to the sum of the eigenvalues:</p>
 
-<p><img src="http://localhost:4000/images/salt_sheath.png" alt="alt" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def gersztenkorn(region):
+  # Stack traces in 3D region into 2D array
+  region = region.reshape(-1, region.shape[-1])
 
-<p>Moreover, geological studies from outcrops provide scale-relevant information to the charcaterisation of rocks in the subsurface according to Jones et al. (2008).</p>
+  # Calculate eigenvalues of covariance matrix
+  cov = region.dot(region.T)
+  vals = np.linalg.eigvalsh(cov)
+  return vals.max() / vals.sum()
 
-<p><img src="http://localhost:4000/images/salt_02.png" alt="alt" /></p>
+result = moving_window(seismic_data,
+                       gersztenkorn,
+                       (3, 3, 9))
+</code></pre></div></div>
 
-<p>From field observations, I investigated how elastic properties of various salt minerals contribute to the overal properties of <em>salt</em>, under the premises that:</p>
+<p>Conceptually, this is similar to treating each seismic trace within the moving window as a separate dimension and calculating how well the resulting point cloud is fit by a plane.</p>
 
-<ol>
-  <li>Evaporite minerals exhibit intrinsic anisotropy.</li>
-  <li>They can arrange in preferred orientations, leading to effective transverse isotropy.</li>
-  <li>It is the tectonic stress that can induce transverse isotropy (strain history).</li>
-</ol>
+<h2 id="gradient-changes-instead-of-trace-similarity">Gradient Changes Instead of Trace Similarity</h2>
 
-<h2 id="research-set-up">Research set up</h2>
+<p>The structure tensor measures how the gradient of each dimension co-varies locally. A number of useful attributes can be computed from the ratios of the eigenvalues of the structure tensor, one of which is a measure of how planar the data is locally, which we’ll refer to as GST coherence.</p>
 
-<p>This was a multi-scale study that includes:</p>
-<ol>
-  <li>Field work, from which the geometry of diapirs was measured from diapir outcrops, including the deformation style of the overlaying rock sequences.</li>
-  <li>Laboratory tests, including ultrasonic velocity measurements, microscopic studies to model preferred orientation and elastic properties of salt</li>
-  <li>Numerical modelling, to determine velocity anisotropy and account for it during seisimc seismic and geomechanical modelling.</li>
-</ol>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from scipy.ndimage import gaussian_filter1d
 
-<h3 id="crystallographic-microstructure">Crystallographic Microstructure</h3>
+def gradients(seismic, sigma):
+  grads = []
+  for axis in range(3):
+    grad = gaussian_filter1d(seismic, sigma,
+	                         axis=axis, order=1)
+    grads.append(grad[..., np.newaxis])
+  return np.concatenate(grads, axis=3)
 
-<p>I used a suite of natural evaporite samples of three main lithologies (halite-, anhydrite-, and gypsum-dominated) with strong fabrics, which were collected from a single diapiric province in Nova Scotia, Canada.</p>
+def gst_coherence_calc(region):
+  region = region.reshape(-1, 3)
+  gst = region.T.dot(region)
+  eigs = np.sort(np.linalg.eigvalsh(gst))[::-1]
+  return (eigs[0]-eigs[1]) / (eigs[0]+eigs[1])
 
-<p>I studied thin sections from all rock samples collected in the field and in the salt mine to study the crystallographic microstructure and model their velocity behavior. Here are some examples from the optical microscope, showing the arrangement and mineral arrangement. These studies also provided insights into the volume fraction of other evaporite mineral within salt deposits.</p>
+def gst_coherence(seismic, window, sigma=1):
+  grad = gradients(seismic, sigma)
+  return moving_window4d(grad_array,
+                         window,
+                         gst_coherence_calc)
+</code></pre></div></div>
 
-<p><img src="http://localhost:4000/images/salt_08.png" alt="alt" /><img src="http://localhost:4000/images/salt_09.png" alt="alt" /></p>
+<p>Because GST coherence measures change in the local slope of the data, it is more closely related to curvature attributes than to the other discontinuity attributes. Therefore, it can reveal different features than discontinuity attributes that compare waveform similarity, but tends to show thicker regions of discontinuity around faults.</p>
 
-<h3 id="crystallographic-nanostructure">Crystallographic Nanostructure</h3>
+<h2 id="final-remarks">Final Remarks</h2>
 
-<p>Sample mineralogy and crystallographic preferred orientation (CPO) were obtained with the electron backscatter diffraction (EBSD) technique.</p>
+<p>Discontinuity attributes are a fundamental part of an interpreter’s toolkit when working with 3D data. While most interpreters are familiar with using discontinuity attributes, few are familiar with how they’re implemented or the differences between similar attributes. Hopefully the accompanying Jupyter notebook and this brief tutorial helps clear up some implementation details and inspires you to attempt new variants on well-known discontinuity attributes.</p>
 
-<p><img src="http://localhost:4000/images/salt_13.png" alt="alt" /></p>
+<h2 id="figures">Figures</h2>
 
-<p>Then, bulk seismic properties for polymineralic evaporites were evaluated with a rock recipe approach (Volg and Reuss bounds).
-<img src="http://localhost:4000/images/salt_10.png" alt="alt" /></p>
+<p><img src="http://localhost:4000/images/figure_1.png" alt="alt" /></p>
 
-<h3 id="ultrasonic-labt-tests">Ultrasonic labt tests</h3>
-<p>In the laboratory, I did ultrasonic tests on cube shaped samples of the same rock specimens.</p>
+<p><strong>Figure 1</strong>: A comparison of the discontinuity algorithms discussed.</p>
 
-<p><img src="http://localhost:4000/images/salt_07.png" alt="alt" /></p>
+<p><img src="http://localhost:4000/images/figure_2.png" alt="alt" /></p>
 
-<h2 id="insights-drawn-from-this-study">Insights drawn from this study</h2>
-
-<p>Results provide insights into the microstructural factors controlling seismic velocities of polymineralic evaporites to better understand the relationship between intrinsic and extrinsic sources of these characteristics.</p>
-
-<p>Crystallographic preferred orientation is responsible for a significant fraction of the bulk seismic velocity anisotropy of the polycrystalline evaporites under study.</p>
-
-<p>Also, the influence of individual evaporitic minerals on velocity anisotropy depends not only on its modal proportion, but on its individual CPO.</p>
-
-<p>Variation of seismic velocity anisotropy suggests a mutually destructive relationship between anhydrite and gypsum that, if true, changes the perception that highly anisotropic minerals only enhance anisotropy, when it may also reduce it.</p>
-
-<p>Seismic velocity anisotropy caused by extrinsic sources can be as significant as intrinsic velocity anisotropy, and must be taken into account to characterise seismic velocity anisotropy of evaporites.</p>
-
+<p><strong>Figure 2</strong>: A visual explanation of the differences between the discontinuity algorithms discussed using only two traces. “C” indicates the calculated coherence value.</p>
 
         
       </section>
@@ -436,7 +448,7 @@
     
       
       
-      <a href="/tags/#field" class="page__taxonomy-item" rel="tag">field</a><span class="sep">, </span>
+      <a href="/tags/#attributes" class="page__taxonomy-item" rel="tag">attributes</a><span class="sep">, </span>
     
       
       
@@ -444,11 +456,11 @@
     
       
       
-      <a href="/tags/#lab" class="page__taxonomy-item" rel="tag">lab</a><span class="sep">, </span>
+      <a href="/tags/#post" class="page__taxonomy-item" rel="tag">post</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#post" class="page__taxonomy-item" rel="tag">post</a>
+      <a href="/tags/#seismic" class="page__taxonomy-item" rel="tag">seismic</a>
     
     </span>
   </p>
@@ -467,10 +479,11 @@
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="/Salt-characterisation/" class="pagination--pager" title="Salt characterisation
+">Previous</a>
     
     
-      <a href="/Discontinuity-attributes/" class="pagination--pager" title="Discontinuity attributes
+      <a href="/Sedimentary-facies-classification/" class="pagination--pager" title="Sedimentary facies classification
 ">Next</a>
     
   </nav>

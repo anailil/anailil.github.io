@@ -3,7 +3,7 @@ title: "Salt characterisation"
 date: 2020-07-30
 tags: [post, geo, field, lab]
 header:
-  image: "/images/DSC_0003.JPG"
+  image: "/images/DSC_0043.JPG"
 excerpt: "Insights from field and laboratory studies"
 mathjax: "true"
 ---
