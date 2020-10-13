@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/Salt-characterisation/</loc>
-<lastmod>2020-07-30T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/Discontinuity-attributes/</loc>
-<lastmod>2020-07-30T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/Sedimentary-facies-classification/</loc>
-<lastmod>2020-07-30T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/Visualising-borehole-logs/</loc>
-<lastmod>2020-09-07T00:00:00+02:00</lastmod>
+<loc>http://localhost:4000/Quick-Visualisation-of-Geophysical-Borehole-Data/</loc>
+<lastmod>2020-07-01T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/cv/</loc>
