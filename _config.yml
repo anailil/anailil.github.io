@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Geo-Data Science"
+title                    : " "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Liliana Vargas-Meleza"
-description              : "My geoscientific work"
+description              : "Subsurface Geoscience"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,12 +96,12 @@ author:
   name             : "Liliana Vargas-Meleza"
   avatar           : "/images/lvm2.jpg "  
   bio              : "Geophysicist. Data Scientist. Geospatial enthusiast." 
-  location         : "The Hague, The Netherlands"
+  location         : "Den Haag"
   email            : "liliana.meleza@gmail.com"
   github           : "anailil"
   linkedin         : "lvargasmeleza"
   links:
-    - label: "liliana.meleza@gmail.com"
+    - label: "E-mail"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:liliana.meleza@gmail.com"
     - label: "Website"

@@ -2,18 +2,19 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/images/wall2.JPG"
+  image: "/images/veta2.JPG"
 ---
 
-My work has been focused on quantitative analysis of geophysical and geologic data for detection of natural resources, namely *geo-data science*. Through numerical modelling and inversion methods, I predict physical properties of rocks in the interior of the Earth or at its surface. It requieres team work to get all this done and expertise in several Earth sciences. 
+Hi, I'm Liliana. 
 
-Results driven and motivated by challenges, I teach myself machine learning and *remote sensing* using free and open resources.
+Welcome to my geoscientific playground. 
 
-This is a place where I collect these learning experiences.
+Here I collect past and ongoing works were I explore my various interests in geology topics and data science. 
 
-Thanks for your interest! 
+This is the living space of my learning experiences. Get in touch if anything in this space has sparked your interest.
 
-Liliana
+Cheers! 
+
 
 
 
